@@ -58,6 +58,11 @@ header {
   gap: 25px;
 }
 
+.sidebar > ul > li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
 
 /* Article layout*/
 .content-container {
