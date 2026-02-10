@@ -63,6 +63,11 @@ header {
   grid-template-columns: 30px 1fr;
 }
 
+.sidebar div {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
 
 /* Article layout*/
 .content-container {
