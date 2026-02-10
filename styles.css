@@ -162,6 +162,10 @@ header {
 .card div {
   align-self: center;
   justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  gap: 30px;
+  padding-right: 20px;
 }
 
 .card p {
