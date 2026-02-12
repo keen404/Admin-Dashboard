@@ -108,7 +108,7 @@ header {
 .announcements-container {
   display: grid;
   gap: 5px;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: max-content 1fr;
 }
 
 .announcements-container ul {
@@ -162,7 +162,6 @@ header {
 /* Projects Container */
 .projects-container {
   display: grid;
-  gap: 5px;
   grid-template-rows: max-content 1fr;
 }
 
@@ -176,6 +175,7 @@ header {
 .card-container,
 .projects-container > p {
   padding: 10px;
+  padding-bottom: 0px;
 }
 
 .card {
@@ -244,7 +244,7 @@ header * {
 .profile-mini,
 .profile-big,
 .trending-container img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 50%;
 }
@@ -255,3 +255,11 @@ header * {
 .trending-container > ul {
   border-radius: 13px;
 } 
+
+/* Gap content in article */
+.projects-container,
+.announcements-container,
+.trending-container
+ {
+  gap: 5px;
+}
