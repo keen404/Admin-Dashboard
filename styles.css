@@ -114,9 +114,14 @@ header {
 .announcements-container ul {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5px;
-  padding: 15px 10px;
+  gap: 30px;
+  padding: 30px;
 }
+
+.announcements-container > ul > li > p {
+  width: 34ch;
+}
+
 .announcements-container ul li {
   display: grid;
   gap: 5px;
