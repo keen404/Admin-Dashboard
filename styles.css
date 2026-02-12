@@ -245,6 +245,12 @@ header * {
 
 .bottom-header button {
   background-color: rgb(66, 192, 255);
+  border-radius: 40px;
+  border: none;
+  width: 100px;
+  height: 39px;
+  color: white;
+  font-weight: bold;
 }
 
 /* Img sizeing */
