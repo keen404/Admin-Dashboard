@@ -173,6 +173,8 @@ header {
   display: grid;
   padding:0px 10px;
   background-color: white;
+  border-left: 24px solid rgb(255, 163, 56);
+  border-radius: 8px;
 }
 
 .card h2 {
