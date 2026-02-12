@@ -183,7 +183,6 @@ header {
   padding: 0px 10px;
   background-color: white;
   border-left: 24px solid rgb(255, 163, 56);
-  border-radius: 8px;
 }
 
 .card h2 {
@@ -249,3 +248,10 @@ header * {
   height: auto;
   border-radius: 50%;
 }
+
+/* Round the edge of content */
+.card,
+.announcements-container > ul,
+.trending-container > ul {
+  border-radius: 13px;
+} 
