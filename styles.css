@@ -170,6 +170,11 @@ header {
   background-color: white;
 }
 
+.trending-container ul li div {
+  display: grid;
+  gap: 3px;
+}
+
 
 /* Projects Container */
 .projects-container {
