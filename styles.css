@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+
 html,
 body {
   height: 100%;
@@ -81,9 +82,6 @@ header {
   background-color: inherit;
 }
 
-
-
-
 /* Article layout*/
 .content-container {
   display: grid;
@@ -91,7 +89,7 @@ header {
   grid-template-rows: max-content 1fr;
   gap: 20px;
   padding: 20px;
-  padding-top: 44px;
+  padding-top: 20px;
   background-color: rgb(184, 255, 255);
 }
 
@@ -270,7 +268,7 @@ header * {
 }
 
 .top-header {
-  padding-top: 20px;
+  padding-top: 14px;
   gap: 17px;
   padding-left: 60px;
 }
@@ -337,7 +335,13 @@ header * {
 
 .big-profile p {
   justify-self: left;
-  align-self: center;
+}
+
+.bottom-header > .big-profile p:nth-child(1){
+  align-self: end;
+}
+.bottom-header > .big-profile p:nth-child(2){
+  align-self: start;
 }
 
 .top-header .search-bar
@@ -355,4 +359,82 @@ header * {
 .announcements-container ul,
 .trending-container ul {
   box-shadow: 8px 9px 9px rgb(0 0 0/ 0.3);
+}
+
+/* Typography */
+* {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.menu-sidebar li a {
+  font-size: 21px;
+  font-weight: bolder;
+  color: white;
+}
+
+.logo-sidebar a {
+  font-size: 32px;
+  font-weight: bolder;
+  color: white;
+}
+
+.bottom-header > .big-profile p:nth-child(1){
+  font-size: 17px;
+  font-weight: bolder;
+}
+.bottom-header > .big-profile p:nth-child(2){
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.bottom-header button {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+.name-mini {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.projects-container > p,
+.announcements-container > p,
+.trending-container > p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.announcements-container ul li h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.card p,
+.announcements-container > ul p {
+  color: rgb(124, 124, 124);
+  font-size: 16px;
+}
+
+.trending-container > ul >li >div >p:nth-child(2){
+  color: rgb(124, 124, 124);
+  font-size: 15px;
+}
+
+.trending-container > ul >li >div >p:nth-child(1) {
+  font-size: 14px;
+}
+
+
+
+/* remove link underline */
+a {
+  text-decoration: none;
 }
