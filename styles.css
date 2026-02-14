@@ -346,6 +346,6 @@ header * {
 }
 
 /* Shadowing */
-.bottom-header {
-  box-shadow: 20px 10px 50px 2px rgb(0 0 255 / 0.5);
+header {
+  box-shadow: 0px -4px 51px 2px rgb(0 0 0/ 0.3);
 }
