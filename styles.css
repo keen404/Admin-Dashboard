@@ -58,9 +58,21 @@ header {
   gap: 25px;
 }
 
+
 .sidebar > ul > li {
   display: grid;
   grid-template-columns: 30px 1fr;
+  gap:10px;
+}
+
+.sidebar > ul > .logo-sidebar {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap:10px;
+}
+
+.sidebar > ul > li * {
+  align-self: center;
 }
 
 .sidebar div,
@@ -73,10 +85,7 @@ header {
   background-color: inherit;
 }
 
-.sidebar div {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-}
+
 
 
 /* Article layout*/
@@ -145,12 +154,15 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4,1fr);
   gap: 5px;
-  padding: 15px 10px;
+  padding: 14px 27px;
 }
 .trending-container ul li {
   display: grid;
-  gap: 5px;
+  gap: 9px;
   grid-template-columns: 50px max-content;
+}
+.trending-container ul li * {
+  align-self: center;
 }
 
 .trending-container ul,
@@ -180,7 +192,7 @@ header {
 
 .card {
   display: grid;
-  padding: 0px 10px;
+  padding: 18px 17px;
   background-color: white;
   border-left: 24px solid rgb(255, 163, 56);
 }
@@ -213,20 +225,29 @@ header {
 
 
 /* Header Layout*/
+.name-mini {
+  padding-right: 100px;
+}
+
 .top-header {
   display: grid;
-  grid-template-columns: 50px 1fr 50px 5% 21%;
+  grid-template-columns: 30px 1fr 30px 5% max-content;
 }
 
 .bottom-header {
   display: grid;
   grid-template-columns: 13% 1fr repeat(3, 13%);
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 20px;
 }
+
 
 .big-profile {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
+
 
 header * {
   background-color: white;
@@ -237,10 +258,18 @@ header * {
   border: 0px;
   border-radius: 70px;
   height: 35px;
+  width: 90%;
+
 }
 
 .search-bar:focus {
   outline: none;
+}
+
+.top-header {
+  padding-top: 20px;
+  gap: 17px;
+  padding-left: 60px;
 }
 
 .bottom-header button {
@@ -254,10 +283,20 @@ header * {
 }
 
 /* Img sizeing */
-.profile-mini,
-.profile-big,
+.profile-mini {
+  max-width: 67%;
+  height: auto;
+  border-radius: 50%;
+}
+
 .trending-container img {
-  max-width: 80%;
+  max-width: 98%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-big {
+  max-width: 60%;
   height: auto;
   border-radius: 50%;
 }
@@ -275,4 +314,31 @@ header * {
 .trending-container
  {
   gap: 5px;
+}
+
+
+/* ALIGNMENTS */
+.profile-mini,
+.profile-big {
+  justify-self: center;
+}
+
+.bottom-header button {
+  align-self: center;
+}
+
+.name-mini {
+  justify-self: right;
+  align-self: center;
+}
+
+.big-profile p {
+  justify-self: left;
+  align-self: center;
+}
+
+.top-header .search-bar
+,.top-header .notification,
+.top-header .search-icon {
+  align-self: center;
 }
